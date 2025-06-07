@@ -3,9 +3,9 @@ const axios = require("axios");
 const TelegramBot = require("node-telegram-bot-api");
 const fetch = require("node-fetch");
 
-const token = "BOT_TOKEN";
-const admin = "USERID";
-const DATABASE_URL = "DATABASE_URL"; 
+const token = "7779704762:AAHsWrrpXyyGHGkkSIdLwFqhoTaxscbolYk";
+const admin = "1585322573";
+const DATABASE_URL = "https://test-39c4d-default-rtdb.firebaseio.com"; 
 const WEBHOOK_URL = "VERCEL_URL";
 
 const bot = new TelegramBot(token, { webHook: { port: false } });
@@ -122,7 +122,7 @@ app.post("/", async (req, res) => {
       const keyboard = {
         reply_markup: {
           inline_keyboard: [
-            [{ text: "🧑‍💻 Developer", url: "https://telegram.dog/DEVELOPER" }]
+            [{ text: "🧑‍💻 Developer", url: "https://telegram.dog/tanmaySingh09_bot" }]
           ]
         },
         parse_mode: "Markdown",
